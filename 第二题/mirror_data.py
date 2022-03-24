@@ -10,7 +10,8 @@ sheet.write(0, 1, 'mirror博主链接')
 sheet.write(0, 3, '一句话简介')
 sheet.write(0, 4, '网址链接')
 
-s = Service(executable_path = r"C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe")
+s = Service(executable_path=
+            r"C:\Program Files\Google\Chrome\Application\chromedriver.exe")
 driver = webdriver.Chrome(service=s)
 driver.get("https://glowing-october-bb2.notion.site/Mirror-fd9f8e8af755430d8f7dea78a65caf9a")
 
@@ -49,5 +50,5 @@ while a or b or c or d or e:
     sheet.write(i-1, 4, e)
     i = i+1
 
-mirror_data.save(r"E:\新桌面\第二题\mirrordata表.xls")
+mirror_data.save(r"第二题/mirrordata表.xls")
 driver.close()
